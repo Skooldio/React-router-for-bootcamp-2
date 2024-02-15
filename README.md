@@ -2,6 +2,9 @@
 
 This is a repository for teaching how to use React Router by migrating already existed project, which is the *Country Finder*.
 
+> [!TIP]
+> It would be wise if you try to do this exercise by yourself with TA first before do branch checkout to see solution ahead of time
+
 It will consist in 3 parts, each part that being checked out represents that final result of what it should be in each state.
 
 1. (Branch `part0-start`) A starting state, unedited, non-refactor code.
