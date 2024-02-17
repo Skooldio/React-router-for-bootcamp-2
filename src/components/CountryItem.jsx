@@ -10,8 +10,9 @@ import {
   CardActions,
   Button
 } from '@mui/material'
+import { Link } from 'react-router-dom';
 
-export function CountryItem({ data, children, onLearnMore }) {
+export function CountryItem({ data, children }) {
   const [hovered, setHovered] = useState(false);
   const [offset, setOffset] = useState(0);
   const cardRef = useRef(null);
@@ -79,9 +80,11 @@ export function CountryItem({ data, children, onLearnMore }) {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" onClick={() => onLearnMore(data)}>
-                Learn More
-              </Button>
+              <Link to={`/country/${data.cca2}`}>
+                <Button size="small">
+                  Learn More
+                </Button>
+              </Link>
             </CardActions>
           </Card>
         </Fade>

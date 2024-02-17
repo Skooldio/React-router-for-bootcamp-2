@@ -17,7 +17,7 @@ import { CountryItem } from './CountryItem';
 import { useOffline } from '../hooks/useOffline';
 import { useCountries } from '../hooks/useCountries';
 
-export function CountryListing({ onSelect }) {
+export function CountryListing() {
   const [text, setText] = useState("");
   const [language, setLanguage] = useState("eng");
 
@@ -118,7 +118,6 @@ export function CountryListing({ onSelect }) {
                   <CountryItem
                     key={country.name.official}
                     data={country}
-                    onLearnMore={() => onSelect(country)}
                   >
                     <ListItemAvatar sx={{ minWidth: 40 }}>
                       {country.flag}
